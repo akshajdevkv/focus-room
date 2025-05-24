@@ -1,0 +1,46 @@
+.playlist-input-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.playlist-input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.playlist-input:focus {
+  border-color: var(--brand-color);
+}
+
+.playlist-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.submit-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background: var(--brand-color);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} 
